@@ -26,8 +26,8 @@ export default function Projects() {
       title: "AgriMarket Platform",
       desc: "A full-stack e-commerce web application with real-time delivery tracking and UPI integrations.",
       category: "FullStack",
-      github: "#",
-      live: "#",
+      github: "https://github.com/pijush-pakrashi/FarmNest.git",
+      live: "https://farmnest.netlify.app/",
       image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=400&h=200&fit=crop"
     }
   ];

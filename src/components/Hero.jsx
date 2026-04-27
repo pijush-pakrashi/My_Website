@@ -5,6 +5,10 @@ export default function Hero() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
+  const changeTheme = (rgb) => {
+    document.documentElement.style.setProperty('--color-primary', rgb);
+  };
+  
   const roles = [
     "I'm Backend Developer | Python & APIs",
     "I'm Python Developer | Flask • Django • REST APIs",
@@ -53,9 +57,9 @@ export default function Hero() {
 
         {/* Three colored circles */}
         <div className="flex gap-3 mb-4 my-2">
-          <div className="w-6 h-6 rounded-full border-[3px] border-pink-500"></div>
-          <div className="w-6 h-6 rounded-full border-[3px] border-red-500"></div>
-          <div className="w-6 h-6 rounded-full border-[3px] border-yellow-500"></div>
+          <button onClick={() => changeTheme('236 72 153')} className="w-6 h-6 rounded-full border-[3px] border-pink-500 hover:scale-125 transition-transform" aria-label="Pink Theme"></button>
+          <button onClick={() => changeTheme('16 185 129')} className="w-6 h-6 rounded-full border-[3px] border-emerald-500 hover:scale-125 transition-transform" aria-label="Emerald Theme"></button>
+          <button onClick={() => changeTheme('234 179 8')} className="w-6 h-6 rounded-full border-[3px] border-yellow-500 hover:scale-125 transition-transform" aria-label="Yellow Theme"></button>
         </div>
 
         {/* Typing effect */}

@@ -1,0 +1,2 @@
+"import React, { useState } from 'react';\n\nexport default function Projects() {\n  const [activeFilter, setActiveFilter] = useState('All');\n  \n  const filters = ['All', 'Python', 'AI', 'Backend', 'FullStack', 'React JS'];\n  \n  const projects = [\n   
+<truncated 3301 bytes>

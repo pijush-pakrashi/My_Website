@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#10b981', // Emerald green from screenshot
+        primary: 'rgb(var(--color-primary) / <alpha-value>)', // Dynamic theme color
         dark: '#0a0a0a',
         cardBg: '#121212',
         cardBorder: '#262626',

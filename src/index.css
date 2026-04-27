@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: 16 185 129; /* #10b981 */
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: #0a0a0a;
@@ -30,7 +34,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #10b981;
+  background: rgb(var(--color-primary));
 }
 
 /* Card Styling from Screenshot */
